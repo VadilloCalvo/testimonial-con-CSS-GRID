@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+.contenedor {
+    margin: 120px auto;
+    width: 90%;
+}
+
+.dibujo {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+    z-index: -1;
+}
+.card__img {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 1.5rem; 
+    margin-bottom: 1.5rem;
+}
+.parrafo1 {
+    font-size: 28px;
+    color: white; 
+    margin-bottom: 1.5rem;
+}
+.parrafo2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0.1px;
+    line-height: 27px;
+    color: hsl(0, 0%, 91%, 70%);
+}
+.masnegro {
+    color: hsl(219, 29%, 14%);
+}
+.negro {
+    color: hsl(217, 19%, 35%, 70%);
+}
+
+.card__name {
+    color: hsl(0, 0%, 100%);
+}
+.card__name--color {
+    color: hsl(219, 29%, 14%);
+}
+.card__estudio {
+    color: hsl(0, 0%, 81%, 80%);
+}
+
+/* CAJAS */
+.card__test {
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    z-index: 0;
+}
+.test1 {
+    background-color: hsl(263, 55%, 52%);  
+}
+.test2 {
+    background-color: hsl(217, 19%, 35%);
+}
+.test3 {
+    background-color: hsl(0, 0%, 100%);
+}
+.test4 {
+    background-color: hsl(219, 29%, 14%);
+}
+.test5 {
+    background-color: hsl(0, 0%, 100%); 
+}
+
+/* FOTOS */
+.sinborde{
+    border-radius: 50%;
+}
+.borde {
+    border-radius: 50%;
+    border: 5px solid hsl(263, 91%, 63%);;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 375px) {
+    .contenedor_grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem;
+    
+}
+@media (min-width: 1440px) { 
+    .contenedor_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .test1 {
+        background-color: hsl(263, 55%, 52%);  
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .test2 {
+        background-color: hsl(217, 19%, 35%);
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .test3 {
+        background-color: hsl(0, 0%, 100%);
+        grid-column: 2/1;
+        grid-row: 2/2;
+    }
+    .test4 {
+        background-color: hsl(219, 29%, 14%);
+        grid-column: 2/4;
+        grid-row: 2/2;
+    }
+    .test5 {
+        background-color: hsl(0, 0%, 100%);
+        grid-column: 4/5;
+        grid-row: 1/3;  
+}
+
+
+/* Contribucion desarrollador */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
